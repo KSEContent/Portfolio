@@ -1,0 +1,77 @@
+/* container */
+.container{
+  width: 100%;
+}
+.container img{
+  width: 100%;
+}
+.row2 div{
+  float: right;
+}
+.container .col-xs-12{
+  white-space: nowrap;
+  vertical-align: bottom;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+.img-text{
+  position: relative;
+  overflow: hidden;
+}
+.img-text::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  transition: .7s;
+}
+.img-text p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.1rem;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.img-text:hover::before{
+  visibility: visible;
+  opacity: 1;
+  transition: .7s;
+}
+
+.img-text:hover p{
+  visibility: visible;
+  opacity: 1;
+  transition: .7s;
+}
+
+.img-text:hover img{
+  transform: scale(1.1);
+  transition: .7s ease;
+}
+
+/* 그리드 종료 */
+/* 타이틀 */
+.styling-title{
+  width: 97.5%;
+  height: 150px;
+  background-color: #111;
+  text-align: center;
+  margin: 50px auto;
+}
+.styling-title h1{
+  color: #fff;
+  line-height: 145px;
+  letter-spacing: 2px;
+}
+/* 타이틀 종료 */
+/* 미디어뭐리 */

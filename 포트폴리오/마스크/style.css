@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "맑은 고딕";
+}
+
+/* up */
+/* up 끝 컨텐츠 시작 */
+.content1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  background-image: url(logo.png);
+  width: 200px;
+  height: 200px;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar .icon {
+  width: 20px;
+  height: 3px;
+  background-color: #111;
+  margin: 5px;
+  position: relative;
+}
+
+.menu-bar .icon::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 10px;
+  height: 3px;
+  background-color: #111;
+  transition: .5s;
+}
+
+.menu-bar:hover .icon::before {
+  width: 20px;
+  transition: .5s;
+}
+
+.menu-bar p {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 200px;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.menu-bar:hover span {
+  color: rgba(255, 0, 0, .7);
+  transition: .5s;
+}
+
+.sns {
+  position: absolute;
+  top: 90%;
+  right: 5%;
+}
+
+.sns i {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.sns i:nth-child(1) {
+  color: tomato;
+}
+
+.sns i:nth-child(2) {
+  color: red;
+}
+
+.sns i:nth-child(3) {
+  color: rgb(114, 184, 235);
+}
+
+.sns i:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: tomato;
+  z-index: -1;
+}
+
+.sns i:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  z-index: -1;
+}
+
+.sns i:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(114, 184, 235);
+  z-index: -1;
+}
+
+.sns i:nth-child(1):hover::after,
+.sns i:nth-child(2):hover::after,
+.sns i:nth-child(3):hover::after {
+  top: 0;
+  transition: .5s ease-in-out;
+}
+
+.sns i:nth-child(1):hover,
+.sns i:nth-child(2):hover,
+.sns i:nth-child(3):hover {
+  color: #fff;
+  transition: .5s ease-in-out;
+}
+
+.buy {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  overflow: hidden;
+}
+
+.buy a {
+  padding: 5px 30px;
+  border: 1px solid #111;
+  font-size: .7rem;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+}
+
+.buy a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  z-index: -1;
+}
+
+.buy a:hover::before {
+  left: 0;
+  transition: .8s;
+}
+
+.buy:hover a {
+  color: #fff;
+  transition: .8s;
+}
+
+.line1 {
+  position: absolute;
+  left: 25%;
+  width: 1px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.line2 {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.line3 {
+  position: absolute;
+  left: 75%;
+  width: 1px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/* 메인페이지 네곳 완료  */
+/* 컨텐츠 내용 시작 */
+.title {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: #ccc;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, .2);
+  margin-left: 20px;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  margin-left: 20px;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  animation: t-bf 2s linear infinite;
+}
+
+@keyframes t-bf {
+  from {
+    visibility: visible;
+    opacity: 1;
+    left: 100%
+  }
+
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  75% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.title h3 {
+  color: #111;
+}
+
+.title span {
+  color: rgba(255, 0, 0, .7);
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  background-image: url(메인마스크/1.png);
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+  animation: up-down 8s linear infinite;
+}
+
+@keyframes up-down {
+  from, to {
+    top: 50%;
+  }
+
+  50% {
+    top: 58%;
+  }
+}
+
+.main-text {
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+}
+
+.main-text h1 {
+  font-size: 10rem;
+  color: #fff;
+  text-shadow: -1px 0 #111, 0 1px #111, 1px 0 #111, 0 -1px #111;
+}
+
+.main-text p {
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  letter-spacing: 5px;
+}
+
+.main-text p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 80%;
+  height: 2px;
+  background-color: rgba(255, 0, 0, .7);
+}
+
+.main-text:hover .A {
+  color: #111;
+  transition: .5s;
+}
+
+.main-text .A::after {
+  content: "++";
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.ck {
+  transition: .8s;
+}
+
+.main-text:hover .A::after {
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}
+
+.main-text:hover .ck {
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+/* 메인화면 완료 */
+/* 메뉴구현 시작 */
+.menu-content {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100vh;
+  background-color: #fff;
+  transition: .8s;
+}
+
+.menu-content-jq {
+  right: 0;
+  transition: .8s;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  line-height: 45px;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+}
+
+h2 .all {
+  border: none;
+  font-size: 2rem;
+  color: #111;
+}
+
+h2:hover .all {
+  color: #ccc;
+  transition: .5s;
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  z-index: -1;
+  transition: .8s;
+}
+
+.menu a:hover::before {
+  left: 0;
+  transition: .8s;
+}
+
+.menu a:hover {
+  color: #fff;
+  transition: .8s;
+}
+
+.home {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home li {
+  width: 50%;
+  margin: 0 3px;
+}
+
+.menu-close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-close .icon {
+  width: 20px;
+  height: 3px;
+  background-color: #111;
+  transform: rotate(45deg);
+}
+
+.menu-close .icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #111;
+  transform: rotate(-90deg);
+}
+
+.menu-close p {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 200px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.menu-close:hover span {
+  color: rgba(255, 0, 0, .7);
+  transition: .5s;
+}
+
+.down {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  animation: down 2.5s linear infinite;
+}
+
+@keyframes down {
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to {
+    top: 90%;
+  }
+}
+
+/* 컨텐츠 1 메인화면 완료 */
+/* 컨텐츠 2 시작 */
+.content2 {
+  width: 100%;
+  height: 200vh;
+  background-color: rgb(015, 015, 015);
+  position: relative;
+}
+
+.img1 {
+  background-image: url(브랜드스토리/1.jpg);
+  width: 487px;
+  height: 740px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.text1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.text1 h3 {
+  font-weight: lighter;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.text1 p {
+  font-size: .9rem;
+  line-height: 30px;
+  font-weight: lighter;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.text1 .percent {
+  color: #fff;
+  font-size: 13rem;
+  margin-top: 150px;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  font-family: "맑은 고딕";
+}
+
+/* 텍스트 첫번쨰 완료 */
+/* 두번쨰 텍스트 시작 */
+.text2 {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  color: #fff;
+}
+
+.text2 p {
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+/*  두번째 텍스트 끝 */
+/*  세번쨰 컨텐츠 시작 */
+.content3 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(015, 015, 015);
+  position: relative;
+  z-index: -3;
+}
+
+.ch-r {
+  position: absolute;
+  top: 0%;
+  left: 22.5%;
+  font-size: 15rem;
+  color: transparent;
+  background-color: transparent;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.content3 .img2 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)), url(브랜드스토리/2.jpg);
+  width: 65%;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+}
+
+.img2 p {
+  color: #fff;
+  font-size: .7rem;
+  position: absolute;
+  top: 20%;
+  left: 2.5%;
+}
+
+/*  컨텐츠 3끝 */
+/*  컨텐츠 4 시작*/
+.content4 {
+  width: 100%;
+  height: 150vh;
+  position: relative;
+  background-color: rgb(015, 015, 015);
+}
+
+.content4 .text {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+.text .title2 {
+  color: #fff;
+  line-height: 55px;
+  font-size: 2rem;
+}
+
+.text p:nth-child(2) {
+  margin-top: 50px;
+  font-size: .8rem;
+  color: #fff;
+}
+
+.content4 .img3 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)), url(브랜드스토리/3.jpg);
+  width: 65%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+.last-text {
+  position: absolute;
+  top: 95%;
+  left: 15%;
+  color: #fff;
+}
+
+.last-text p:nth-child(1) {
+  font-size: 2rem;
+}
+
+.last-text p:nth-child(2) {
+  margin-top: 50px;
+  font-size: .9rem;
+}
+
+.last-text p:nth-child(3) {
+  margin-top: 480px;
+  font-size: .9rem;
+}
+
+.last-text p:nth-child(3) span {
+  font-size: .6rem;
+}
+
+.img4 {
+  width: 35%;
+  height: 700px;
+  background-position: center;
+  background-image: url(사람/1.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 95%;
+  right: 15%;
+}
+
+/* 컨텐츠 4 끝 */
+/* 컨텐츠 5 시작 */
+.content5 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(015, 015, 015);
+  display: table;
+}
+
+.content5 p {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+/*  공간 채우기 용 */
+/*  content6 시작 */
+.content6 {
+  width: 100%;
+  height: 25vh;
+  background-color: rgb(015, 015, 015);
+}
+
+.content6 p {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 25px;
+  padding-top: 50px;
+  font-size: 1.2rem;
+}
+
+/*  content6 끝 */
+/* content7 시작 (서브메뉴) */
+.content7 {
+  width: 50%;
+  height: 35vh;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content7 div:not(.sub-menu3) {
+  height: 169px;
+}
+
+.content7 h2:not(.all2) {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.content7 ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+.content7 a {
+  font-size: .9rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* content7 끝 */
+/* footer 시작 */
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  color: #000;
+  padding: 25px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer p {
+  letter-spacing: 10px;
+  font-size: .8rem;
+}
+
+footer li{
+  padding-left: 20px;
+  font-size: .8rem;
+}

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ul,ol,a{
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  width: 61%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+/* 헤더시작 */
+header{
+ width: 100%;
+ height: 80px;
+}
+header .logo{
+  min-width: 8%;
+  float: left;
+}
+header .logo img{
+  width: 50%;
+}
+header .menu-icon{
+  float: right;
+  padding: 15px 0px 15px 20px;
+  cursor: pointer;
+}
+.menu-icon .icon{
+  width: 20px;
+  height: 2px;
+  background-color: #111;
+  margin-top: 30px;
+  position: relative;
+}
+.menu-icon .icon::before{
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #111;
+}
+.menu-icon .icon::after{
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #111;
+}
+/* 헤더종료 */
+/*  푸터 시작 */
+footer{
+  width: 100%;
+  height: 180px;
+  background-color: #333333;
+  margin-top: 40px;
+}
+footer i{
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0 10px;
+}
+.sns{
+  text-align: center;
+  padding-top: 30px;
+}
+.sns_title{
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  font-size: .9rem;
+}
+.address{
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(150,150,150);
+  font-size: .8rem;
+}
+.bottom{
+  text-align: center;
+  padding-top: 5px;
+  color: #fff;
+  font-size: .9rem;
+}
+/* 푸터 종료 */
+/* 메뉴시작 */
+.menu-wrap{
+  width: 62%;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-bottom: 1px solid #111;
+  transition: .5s;
+}
+.menu-wrap-jq{
+  top: 0;
+  transition: .5s;
+}
+.menu-wrap .logo{
+  min-width: 8%;
+  float: left;
+}
+.menu-wrap .logo img{
+  width: 50%;
+}
+.icon-close{
+  float: right;
+  cursor: pointer;
+  padding-top: 40px;
+}
+.menu{
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+.search{
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+}
+.search input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #111;
+  outline: none;
+  transition: .5s;
+}
+.search input:focus{
+  border-bottom: 1px solid tomato;
+  transition: .5s;
+}
+.search i{
+  font-size: 2rem;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  cursor: pointer;
+}
+.menu-title p{
+  font-size: 1.4rem;
+  border-bottom: 1px solid #111;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  width: 50%;
+  float: left;
+}
+.menu-title .title p::before{
+  content: "";
+  position: absolute;
+  bottom: .5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #111;
+  transition: .7s;
+}
+.menu-title .title:nth-child(1) p::before{
+  width: 100%;
+}
+.menu-title .title p:hover::before{
+  width: 100%;
+  transition: .7s;
+}
+.menu-title a{
+  color: #111;
+  text-decoration: none;
+}
+.menu1{
+  clear: left;
+}
+.menu-title ul{
+  width: 50%;
+  float: left;
+  text-transform: uppercase;
+}
+.menu-title li{
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+.menu-title li a{
+  position: relative;
+  letter-spacing: 2px;
+}
+.menu-title li a::before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #111;
+  transition: .5s;
+}
+.menu-title li:hover a::before{
+  width: 100%;
+  transition: .5s;
+}
+.soon{
+  font-size: .7em;
+}
+.menu-logo{
+  padding-top: 80px;
+}
+/* 메뉴종료 */
+
+@media (max-width: 1250px) {
+  body{
+    width: 95%;
+  }
+  .menu-wrap{
+    width: 95%;
+  }
+  .main img{
+    width: 95%;
+  }
+  .all-title{
+    width: 95%;
+  }
+}
+
+@media (max-width: 393px) {
+  .soon{
+    font-size: 0em;
+  }
+}

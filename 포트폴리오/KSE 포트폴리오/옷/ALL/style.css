@@ -1,0 +1,107 @@
+/* 메인이미지시작 */
+.main{
+  clear: both;
+  width: 100%;
+  vertical-align: bottom;
+  text-align: center;
+}
+.main img{
+  width: 80%;
+}
+/* 메인이미지 종료 */
+/* 타이틀 시작 */
+.all-title{
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  margin: 0px auto;
+  background-color: rgb(52, 90, 140);
+}
+
+.all-title h2{
+  line-height: 100px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+/* 타이틀 종료 */
+/* 정렬 */
+.col-md-4 img{
+  width: 100%;
+}
+.col-md-4{
+  padding-left: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.sell h2{
+  font-size: 1.2rem;
+}
+.sell{
+  width: 90%;
+  float: left;
+  white-space: nowrap;
+  /* 중요 */
+}
+.col-md-4:hover h2{
+  color: #0078ff;
+  transition: .5s;
+}
+.col-md-4:hover p{
+  color: rgb(226, 22, 97);
+  transition: .5s;
+}
+.cart{
+  width: 10%;
+  float: right;
+  text-align: right;
+  z-index: 2;
+}
+.cart i{
+  font-size: 1.7rem;
+  color: #ccc;
+  padding-top: 32px;
+  transition: .5s;
+}
+.cart i:hover{
+  color: #111;
+  transition: .5s;
+}
+.container1{
+  margin-top: 40px;
+}
+.container1 a{
+  color: #111;
+}
+.container1 .read{
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+}
+.container1 .read::after{
+  content: "";
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 40%;
+  height: 1px;
+  background-color: rgba(0,0,0,.4);
+  transition: .5s;
+}
+.container1 .read a{
+  font-size: 1.5rem;
+  border: 1px solid #16a4e2;
+  color: #16a4e2;
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: .5s;
+}
+.container1 .read:hover a{
+  background-color: #16a4e2;
+  color: #fff;
+  transition: .5s;
+}
+.container1 .read:hover::after{
+  background-color: #16a4e2;
+  transition: .5s;
+}

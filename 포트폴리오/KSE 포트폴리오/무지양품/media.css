@@ -1,0 +1,155 @@
+/* 미디어 쿼리 */
+@media (max-width: 1449px) {
+    body{
+      overflow-x: hidden;
+    }
+    .container,
+    .map,
+    .re-icon{
+        width: calc(100% - 250px);
+        padding: 0;
+        padding-left: 10px;
+    }
+    .top-footer,
+    .mid-footer,
+    .bottom-footer{
+      width: 100%;
+      margin: 0;
+    }
+    .row div{
+      padding-right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+  .top-footer .footer-menu1{
+    width: 100%;
+  }
+  .top-footer .footer-menu2{
+    display: none;
+  }
+  .footer-menu1 a:nth-child(4){
+    border-right: none;
+  }
+  .bottom-text2 span,
+  .tablet{
+    display: none;
+  }
+  /* 바텀먼저 */
+  .box3::before{
+    width: calc(100% - 20px);
+  }
+  .box3{
+    margin-top: 20px;
+  }
+  .re-icon{
+    margin: 20px auto;
+  }
+  .content{
+    margin-top: 0;
+  }
+}
+@media (max-width: 918px) {
+  .re-icon{
+    margin: 50px auto;
+  }
+  .mid-footer a{
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: .7rem;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .mid-footer{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    overflow: hidden;
+  }
+  .bottom-footer{
+    padding-left: 10px;
+  }
+}
+
+@media (max-width:768px) {
+  aside{
+    display: none;
+  }
+  .container,
+  .map,
+  .re-icon{
+    width: 100%;
+    padding: 10px;
+  }
+  .sell-content{
+    margin-top: 100px;
+  }
+  .sell-content:nth-child(1){
+    margin-top: 30px;
+  }
+  .re-icon{
+    margin: 100px auto;
+  }
+  .logo{
+    text-align: left;
+    padding-left: 5px;
+  }
+  .logo i{
+    display: inline-block;
+    float: right;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    padding-top: 25px;
+    cursor: pointer;
+  }
+  .bottom-logo{
+    width: 100%;
+  }
+  .bottom-text1{
+    width: 90%;
+    float: left;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .bottom-text2{
+    width: 100%;
+    float:left;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 424px) {
+  #title1::after,
+  #title2::after,
+  #title3::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    width: 50px;
+    height: 20px;
+    background-color: #111;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-size: .5rem;
+  }
+  #title1::after{
+    content: "모듈";
+  }
+  #title2::after{
+    content: "아카이브";
+  }
+  #title3::after{
+    content: "디자인";
+  }
+  .footer-menu1{
+    font-size: .6rem;
+    padding: 0;
+  }
+  .top-footer a{
+    padding:10px;
+    border-right: none;
+  }
+}

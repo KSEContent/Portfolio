@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ul,ol,a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #111;
+}
+.top{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 15px 0;
+  letter-spacing: 3px;
+}
+.top span{
+  padding: 6px 24px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #7F0019;
+}
+/* top끝 */
+/* 로고 */
+.logo{
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  text-align: center;
+}
+.logo img{
+  width: 220px;
+  padding: 20px 0;
+}
+.logo i{
+  display: none;
+}
+/* aside */
+aside{
+  width: 250px;
+  height: 100%;
+  border-right: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  float: left;
+  background-color: #fff;
+  padding: 10px;
+}
+.icon{
+  width: 100%;
+}
+.icon img{
+  width: 30%;
+  margin: 30px 0;
+}
+.icon h1{
+  width: 100%;
+  font-weight: lighter;
+  font-size: .75rem;
+}
+.aside-jq{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+aside .menu{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu ul{
+  padding: 20px 0;
+}
+.menu ul a{
+  font-size: .75rem;
+}
+.menu a:hover{
+  text-decoration: underline;
+}
+.menu p{
+  display: inline-block;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+/* aside 종료 */
+/* 컨테이너 반응형 배치 시작 */
+.container{
+  width: calc(100% - 500px);
+  float: right;
+  padding: 0 250px 0 0;
+  margin: 0 auto;
+}
+.row img,
+.row video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  /* 인라인 요소이기 떄문에 블록을 써서 여백효과 줄이기 */
+}
+.col-md-12{
+  padding-top: 5px;
+}
+#title1,
+#title2,
+#title3{
+  position: relative;
+}
+#title1::before,
+#title2::before,
+#title3::before{
+  content: "MUJI";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 50px;
+  height: 20px;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  font-size: .7rem;
+}
+#title1::after,
+#title2::after,
+#title3::after{
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  width: 50px;
+  height: 20px;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  font-size: .7rem;
+}
+#title1::after{
+  content: "모듈";
+}
+#title2::after{
+  content: "아카이브";
+}
+#title3::after{
+  content: "디자인";
+}
+/* story 종료 */
+/* 신상품 시작 */
+.box{
+  position: relative;
+}
+.box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+  transition: .3s;
+}
+.box::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 20px;
+  background-color: rgb(128,000,025);
+  line-height: 20px;
+  text-align: center;
+  font-size: .7rem;
+  color: #fff;
+  visibility: hidden;
+}
+.box1::after{
+  content: "의류";
+}
+.box2::after{
+  content: "생활잡화";
+}
+.box3::after{
+  content: "식품";
+}
+.box:hover::before{
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.box:hover::after{
+  visibility: visible;
+}
+/* 신상품 종료 */
+/* 세일 시작*/
+.down{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+/* 끝 */
+/* 맵 */
+.map{
+  float: right;
+  width: calc(100% - 500px);
+  padding: 0 250px 0 0;
+  margin: 0 auto;
+}
+.map iframe{
+  width: 100%;
+  margin-bottom: 40px;
+}
+/* 끝 */
+/* footer */
+footer{
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+
+.top-footer{
+  width: calc(100% - 500px);
+  height: 30px;
+  border-top: 1px solid #000;
+  background-color: #dbdbdb;
+  margin: 0 auto;
+}
+.footer-menu1{
+  float: left;
+  width: 50%;
+  font-size: .75rem;
+  line-height: 30px;
+}
+.footer-menu1 a{
+  padding: 0 20px;
+  border-right: 1px solid rgba(0,0,0,.4);
+}
+.footer-menu2{
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: .7rem;
+  line-height: 30px;
+}
+.mid-footer{
+  width: calc(100% - 500px);
+  margin: 0 auto;
+  clear: left;
+  font-size: .8rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 10px 0;
+}
+.mid-footer a{
+  padding: 10px 20px;
+}
+.bottom-footer{
+  width: calc(100% - 500px);
+  overflow: hidden;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.bottom-logo{
+  float: left;
+  width: 10%;
+}
+.bottom-text1{
+  float: left;
+  width: 60%;
+  font-size: .7rem;
+  padding-left: 100px;
+}
+.bottom-text1 span{
+  font-weight: bold;
+}
+.bottom-text2{
+  float: right;
+  text-align: right;
+  width: 30%;
+  font-size: .8rem;
+  padding-left: 100px;
+}
+/* 종료 */
+/* 반응형 메뉴 */
+.move-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  text-align: center;
+  padding-top: 50px;
+  display: none;
+}
+.move-menu a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255,255,255,.6);
+  padding: 35px 0;
+}
+.move-menu a:hover{
+  color: #fff;
+}
+.move-menu-jq{
+  display: block;
+}
+.move-close{
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}

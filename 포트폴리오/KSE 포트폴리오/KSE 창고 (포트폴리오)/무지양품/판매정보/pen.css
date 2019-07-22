@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ul,ol,a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #111;
+}
+.top{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 15px 0;
+  letter-spacing: 3px;
+}
+.top span{
+  padding: 6px 24px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #7F0019;
+}
+/* top끝 */
+/* 로고 */
+.logo{
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  text-align: center;
+}
+.logo img{
+  width: 220px;
+  padding: 20px 0;
+}
+.logo i{
+  display: none;
+}
+/* aside */
+aside{
+  width: 250px;
+  height: 100%;
+  border-right: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  float: left;
+  background-color: #fff;
+  padding: 10px;
+}
+.icon{
+  width: 100%;
+}
+.icon img{
+  width: 30%;
+  margin: 30px 0;
+}
+.icon h1{
+  width: 100%;
+  font-weight: lighter;
+  font-size: .75rem;
+}
+.aside-jq{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+aside .menu{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu ul{
+  padding: 20px 0;
+}
+.menu ul a{
+  font-size: .75rem;
+}
+.menu a:hover{
+  text-decoration: underline;
+}
+.menu p{
+  display: inline-block;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+/* aside 종료 */
+/* 판매정보 시작 */
+
+.content{
+  width: calc(100% - 500px);
+  float: right;
+  padding: 0 250px 0 0;
+  margin: 20px auto;
+}
+.content .sell-img{
+  float: left;
+  width: 50%;
+  margin-top: 100px;
+  position: relative;
+}
+/* .content .sell-img::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(img/2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: 100%;
+  visibility: hidden;
+}
+.content .sell-img:hover::after{
+  visibility: visible;
+} */
+.content .sell-text{
+  float: left;
+  width: 50%;
+}
+.cart{
+  cursor: pointer;
+}
+.cart img{
+  width: 25px;
+}
+.sell-text table{
+  width: 100%;
+  margin-top: 50px;
+  line-height: 50px;
+  padding: 10px;
+}
+.sell-text tr{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.sell-text th{
+  text-align: left;
+  font-weight: bold;
+}
+.sell-text td{
+  text-align: right;
+  font-size: .9rem;
+}
+.sell-text .btn1,
+.sell-text .btn2{
+  width: 50%;
+  text-align: center;
+  border: 1px solid;
+  padding: 5px 0;
+}
+.sell-text th.btn1,
+.sell-text th.btn2{
+  font-weight: lighter;
+  font-size: .9rem;
+}
+.sell-text th.btn1,
+.sell-text th.btn2{
+  background-color: #262626;
+}
+.sell-text th.btn1 a,
+.sell-text th.btn2 a{
+  color: #fff;
+}
+.sell-text th.btn1:hover,
+.sell-text th.btn2:hover{
+  background-color: #fff;
+}
+.sell-text th.btn1:hover a,
+.sell-text th.btn2:hover a{
+  color: #111;
+}
+.sell-text td.btn1,
+.sell-text td.btn2{
+  background-color: #fff;
+}
+.sell-text td.btn1 a,
+.sell-text td.btn2 a{
+  color: #111;
+}
+.sell-text td.btn1:hover,
+.sell-text td.btn2:hover{
+  background-color: #262626;
+}
+.sell-text td.btn1:hover a,
+.sell-text td.btn2:hover a{
+  color: #fff;
+}
+.content-text{
+  width: calc(100% - 500px);
+  float: right;
+  padding: 0 250px 0 0;
+  margin: 20px auto;
+}
+.sub table{
+  padding: 10px;
+  width: 100%;
+}
+.sub th,
+.sub td{
+  width: 50%;
+}
+.sub img{
+  border: 1px solid rgba(0,0,0,.2);
+}
+.sub img:hover{
+  border: 1px solid #7F0019;
+}
+.sub th{
+  text-align: right;
+}
+.explanation-title{
+  font-size: .9rem;
+  padding: 50px 0;
+  text-align: center;
+}
+.explanation{
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 10px;
+}
+.explanation tr{
+  padding: 30px 0;
+}
+.explanation th,
+.explanation td{
+  width: 50%;
+  font-size: .9rem;
+}
+.explanation th{
+  text-align: left;
+}
+.sub-table-td{
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 10px;
+}
+.explanation table table{
+  font-weight: lighter;
+}
+/* footer */
+footer{
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+
+.top-footer{
+  width: calc(100% - 500px);
+  height: 30px;
+  border-top: 1px solid #000;
+  background-color: #dbdbdb;
+  margin: 0 auto;
+}
+.footer-menu1{
+  float: left;
+  width: 50%;
+  font-size: .75rem;
+  line-height: 30px;
+}
+.footer-menu1 a{
+  padding: 0 20px;
+  border-right: 1px solid rgba(0,0,0,.4);
+}
+.footer-menu2{
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: .7rem;
+  line-height: 30px;
+}
+.mid-footer{
+  width: calc(100% - 500px);
+  margin: 0 auto;
+  clear: left;
+  font-size: .8rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 10px 0;
+}
+.mid-footer a{
+  padding: 10px 20px;
+}
+.bottom-footer{
+  width: calc(100% - 500px);
+  overflow: hidden;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.bottom-logo{
+  float: left;
+  width: 10%;
+}
+.bottom-text1{
+  float: left;
+  width: 60%;
+  font-size: .7rem;
+  padding-left: 100px;
+}
+.bottom-text1 span{
+  font-weight: bold;
+}
+.bottom-text2{
+  float: right;
+  text-align: right;
+  width: 30%;
+  font-size: .8rem;
+  padding-left: 100px;
+}
+/* 종료 */
+/* 반응형 메뉴 */
+.move-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  text-align: center;
+  padding-top: 50px;
+  display: none;
+}
+.move-menu a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255,255,255,.6);
+  padding: 35px 0;
+}
+.move-menu a:hover{
+  color: #fff;
+}
+.move-menu-jq{
+  display: block;
+}
+.move-close{
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+/* 미디어쿼리 */
+@media (max-width: 1660px) {
+  .content .sell-img,
+  .content .sell-text{
+    width: 100%;
+  }
+  .content .sell-img{
+    text-align: center;
+  }
+  .content-text th,
+  .content-text td{
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  .content,
+  .content-text{
+    width: calc(100% - 250px);
+    padding-right: 0;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .content,
+  .content-text{
+    width: calc(100%);
+    padding-right: 0;
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .content,
+  .content-text{
+    width: calc(100%);
+    padding-right: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,62 @@
+.contact{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.2);
+  position: relative;
+  margin-top: 40px;
+  height: 600px;
+  transition: border .5s;
+}
+.contact:hover{
+  border: 1px solid #111;
+  transition: .5s;
+}
+.left,
+.right{
+  width: 50%;
+  float: left;
+}
+.right{
+  position: relative;
+  text-align: center;
+}
+.right img{
+  padding-top: 30px;
+}
+.contact .contact-name,
+.contact .contact-tel,
+.contact .contact-massage{
+  width: 80%;
+  margin: 100px auto;
+}
+input{
+  width: 100%;
+  border: none;
+  border-top: 1px solid #111;
+  outline: none;
+}
+input::placeholder{
+  color: #111;
+  font-weight: bold;
+}
+.send{
+  width: 80%;
+  text-align: right;
+  margin: 0 auto;
+}
+.send a{
+  padding: 6px 24px;
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: .5s;
+}
+.send a:hover{
+  background-color: #4c85e0;
+  color: #fff;
+  transition: .5s;
+}
+/* 푸터시작 */
+footer{
+  clear: both;
+}

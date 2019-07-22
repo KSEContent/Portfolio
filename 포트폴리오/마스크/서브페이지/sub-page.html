@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title> :: AIRINUM 공식몰 </title>
+</head>
+
+<body>
+  <section class="header">
+    <a href="../index.html">
+      <div class="logo"> </div>
+    </a>
+    <div class="menu-bar">
+      <div class="icon"> </div>
+
+      <p><span>open</span> menu</p>
+
+    </div>
+
+    <div class="menu-content">
+      <div class="menu-close">
+        <div class="icon"> </div>
+        <p><span>close</span> menu</p>
+
+      </div>
+      <div class="menu">
+        <h2>air filter mask 2.0</h2>
+        <ul>
+          <li><a href="#">LIMITED MASKS</a></li>
+          <li><a href="#">MASKS</a></li>
+          <li><a href="#">MASKS (KIDS)</a></li>
+          <li><a href="#">FILTERS</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+        </ul>
+
+        <h2>air filter mask 1.0</h2>
+        <ul>
+          <li><a href="#">MASKS</a></li>
+          <li><a href="#">MASKS (KIDS)</a></li>
+          <li><a href="#">FILTERS</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+        </ul>
+
+        <h2><a href="#" class="all">전체상품</a></h2>
+
+        <ul class="home">
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sell">
+    <div class="sell1">
+      <div class="img" style="background-image: url(../상품이미지/1.jpg)">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="text">
+        <h4>에어리넘 Air Filter Mask 2.0 ONYX BLACK</h4>
+        <p style="font-size: 1.1rem;">79,900원</p>
+        <div class="text-ux">
+          <p style="text-align: left; color: rgb(150,150,150);">리뷰 : 1111</p>
+          <p style="text-align: right; color: rgb(150,150,150);"> 평점 : 4.6 / 5.0</p>
+        </div>
+      </div>
+    </div>
+    <div class="sell1">
+      <div class="img" style="background-image: url(../상품이미지/2.jpg)">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="text">
+        <h4>에어리넘 Air Filter Mask 2.0 PEARL PINK</h4>
+        <p style="font-size: 1.1rem;">79,900원</p>
+        <div class="text-ux">
+          <p style="text-align: left; color: rgb(150,150,150);">리뷰 : 1111</p>
+          <p style="text-align: right; color: rgb(150,150,150);"> 평점 : 4.6 / 5.0</p>
+        </div>
+      </div>
+    </div>
+    <div class="sell1">
+      <div class="img" style="background-image: url(../상품이미지/3.jpg)">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="text">
+        <h4>에어리넘 Air Filter Mask 2.0 QUARTZ GREY</h4>
+        <p style="font-size: 1.1rem;">79,900원</p>
+        <div class="text-ux">
+          <p style="text-align: left; color: rgb(150,150,150);">리뷰 : 1111</p>
+          <p style="text-align: right; color: rgb(150,150,150);"> 평점 : 4.6 / 5.0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content7">
+
+    <div class="sub-menu1">
+      <h2>air filter mask 2.0</h2>
+      <ul>
+        <li><a href="#">LIMITED MASKS</a></li>
+        <li><a href="#">MASKS</a></li>
+        <li><a href="#">MASKS (KIDS)</a></li>
+        <li><a href="#">FILTERS</a></li>
+        <li><a href="#">ACCESSORIES</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-menu2">
+      <h2>air filter mask 1.0</h2>
+      <ul>
+        <li><a href="#">MASKS</a></li>
+        <li><a href="#">MASKS (KIDS)</a></li>
+        <li><a href="#">FILTERS</a></li>
+        <li><a href="#">ACCESSORIES</a></li>
+      </ul>
+    </div>
+
+    <div class="sub-menu3">
+      <h2 class="all2"><a href="#" style="font-size: 1.3rem;">전체상품</a></h2>
+    </div>
+  </section>
+
+  <footer>
+    <p>AIRINUM / </p>
+    <ul>
+      <li> 경기도 성남시 분당구 불정로 6 네이버 그린팩토리 13561</li>
+      <li>1588-3819</li>
+      <li>대표이사 한성숙</li>
+    </ul>
+
+  </footer>
+</body>
+<script type="text/javascript">
+  $(function() {
+    $(".menu-bar").click(function() {
+      $(".menu-content").addClass("menu-content-jq");
+    });
+
+    $(".menu-close").click(function() {
+      $(".menu-content").removeClass("menu-content-jq");
+    });
+  });
+</script>
+
+</html>
